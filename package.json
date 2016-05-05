@@ -1,0 +1,17 @@
+{
+  "name": "wikivoyage-maps",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/juliengirault/wikivoyage-maps.git"
+  },
+  "author": "Julien Girault",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/juliengirault/wikivoyage-maps/issues"
+  },
+  "homepage": "https://github.com/juliengirault/wikivoyage-maps#readme"
+}
