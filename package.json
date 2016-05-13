@@ -1,17 +1,28 @@
 {
-  "name": "wikivoyage-maps",
-  "version": "0.0.1",
-  "description": "",
-  "scripts": {
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/juliengirault/wikivoyage-maps.git"
-  },
-  "author": "Julien Girault",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/juliengirault/wikivoyage-maps/issues"
-  },
-  "homepage": "https://github.com/juliengirault/wikivoyage-maps#readme"
+	"name": "wikivoyage-maps",
+	"version": "0.0.1",
+	"description": "",
+	"scripts": {
+		"build-js": "rollup -c",
+		"build-css": "cp node_modules/prunecluster/dist/LeafletStyleSheet.css dist/Mediawiki:Kartographer.css && cat src/styles/wikivoyage.css >> dist/Mediawiki:Kartographer.css",
+		"build-icons": "cp -R icons/. dist/",
+		"build": "npm run build-js && npm run build-css && npm run build-icons"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/juliengirault/wikivoyage-maps.git"
+	},
+	"author": "Julien Girault",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/juliengirault/wikivoyage-maps/issues"
+	},
+	"homepage": "https://github.com/juliengirault/wikivoyage-maps#readme",
+	"dependencies": {
+		"prunecluster": "^2.0.0-beta.3"
+	},
+	"devDependencies": {
+		"rollup": "^0.26.2",
+		"rollup-plugin-json": "^2.0.0"
+	}
 }

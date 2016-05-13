@@ -1,0 +1,19 @@
+{
+	"kartographer-wv-group": "Group: ",
+	"kartographer-wv-Mapnik": "Mapnik",
+	"kartographer-wv-Hiking": "Hiking",
+	"kartographer-wv-Wikimedia": "Wikimedia",
+	"kartographer-wv-nearby-articles": "Nearby articles",
+	"kartographer-wv-Mapquest open": "Mapquest open",
+	"kartographer-wv-Mapquest": "Mapquest",
+	"kartographer-wv-Relief map": "Relief map",
+	"kartographer-wv-Traffic line network": "Traffic line network",
+	"kartographer-wv-Mapquest (labels)": "Mapquest (labels)",
+	"kartographer-wv-Boundaries": "Boundaries",
+	"kartographer-wv-Hill shading": "Hill shading",
+	"kartographer-wv-Cycling": "Cycling",
+	"kartographer-wv-warning-external-source-title": "External data source",
+	"kartographer-wv-warning-external-source-message": "This content is hosted externally, so enabling it shares your data with other sites.",
+	"kartographer-wv-warning-external-source-agree": "It's okay",
+	"kartographer-wv-warning-external-source-disagree": "Cancel"
+}

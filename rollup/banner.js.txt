@@ -1,0 +1,17 @@
+/* The JavaScript is this file is supposed to be put in Mediawiki:Kartographer.js */
+
+/* This is a temporary hack to make sure mapbox has finished loading. */
+function waitForL( ready ) {
+	if ( typeof L !== 'undefined' ) {
+		ready();
+	}
+	else {
+		setTimeout( function () {
+			waitForL( ready );
+		}, 250 );
+	}
+}
+
+waitForL( function () {
+
+mw.hook( 'wikipage.content' ).add( function ( $content ) {
