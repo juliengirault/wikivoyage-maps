@@ -1,0 +1,19 @@
+/**********************************************************************
+ * The CSS in this file is an EXPERIMENTATION of the
+ * Kartographer extension customized for Wikivoyage.
+ *
+ * This is a generated file, like Mediawiki:Kartographer.js.
+ *
+ * The code is free and open source and can be found at:
+ *     https://github.com/juliengirault/wikivoyage-maps
+ *
+ * WHAT IS IT DOING ?
+ *
+ * Please refer to: Mediawiki:Kartographer.js
+ *
+ * HOW CAN YOU HELP ?
+ *
+ * Please refer to: Mediawiki:Kartographer.js
+ *
+ **********************************************************************/
+

@@ -1,6 +1,43 @@
-/* The JavaScript is this file is supposed to be put in Mediawiki:Kartographer.js */
+/**********************************************************************
+ * The JavaScript in this file is an EXPERIMENTATION of the
+ * Kartographer extension customized for Wikivoyage.
+ *
+ * This is a generated bundle file. The code is free and open source
+ * and can be found at:
+ *     https://github.com/juliengirault/wikivoyage-maps
+ *
+ * WHAT IS IT DOING ?
+ *
+ * In a few words, this code listens to a mediawiki hook, `wikivoyage.maps`
+ * and adds a few features onto the basic Kartographer map:
+ *
+ * - Adds a control (top right) to select a different tile layer and toggle
+ *   overlays:
+ *     - Adds tile layers (mapnik, mapquestopen, mapquest, landscape)
+ *     - Adds overlays (traffic, maplabels, boundaries, hill, cycling, hiking)
+ * - Adds a control (top left) to show the Nearby Articles from enwikivoyage.
+ * - Adds a scale control (bottom left).
+ *
+ * Please find or ask for more information in the Phabricator ticket:
+ *     https://phabricator.wikimedia.org/T132971
+ *
+ * HOW CAN YOU HELP ?
+ *
+ * We need to collect feedback, about the experimentation itself, about the
+ * features, the design, the user experience, the code... We also need to
+ * start tracking bugs and fixing them. Please help.
+ *
+ * To report a bug or an issue:
+ *     https://github.com/juliengirault/wikivoyage-maps/issues/new
+ *     https://github.com/juliengirault/wikivoyage-maps/issues/
+ *
+ * To contribute to the code:
+ *     https://github.com/juliengirault/wikivoyage-maps/pulls
+ *
+ **********************************************************************/
 
 /* This is a temporary hack to make sure mapbox has finished loading. */
+// TODO: Introduce a leaflet hook or handle dependencies better.
 function waitForL( ready ) {
 	if ( typeof L !== 'undefined' ) {
 		ready();

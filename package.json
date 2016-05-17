@@ -4,7 +4,7 @@
 	"description": "",
 	"scripts": {
 		"build-js": "rollup -c",
-		"build-css": "cp node_modules/prunecluster/dist/LeafletStyleSheet.css dist/Mediawiki:Kartographer.css && cat src/styles/wikivoyage.css >> dist/Mediawiki:Kartographer.css",
+		"build-css": "cp rollup/banner.css.txt dist/Mediawiki:Kartographer.css && cat node_modules/prunecluster/dist/LeafletStyleSheet.css >> dist/Mediawiki:Kartographer.css && cat src/styles/wikivoyage.css >> dist/Mediawiki:Kartographer.css",
 		"build": "npm run build-js && npm run build-css"
 	},
 	"repository": {
