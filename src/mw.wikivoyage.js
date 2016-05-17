@@ -71,9 +71,9 @@ export default {
 		var icon;
 		options = options || {};
 		if ( options.wvIsExternal ) {
-			icon = 'http://maps.wikivoyage-ev.org/w/lib/images/external.png';
+			icon = '/w/skins/Vector/images/external-link-ltr-icon.png?325de';
 		} else if ( options.wvIsWMF ) {
-			icon = 'https://tools.wmflabs.org/wikivoyage/w/lib/images/wmf-logo-12.png';
+			icon = '//upload.wikimedia.org/wikipedia/commons/thumb/8/81/Wikimedia-logo.svg/12px-Wikimedia-logo.svg.png';
 		}
 		return name + ( icon ? ' <img src="' + icon + '" />' : '' );
 	},
