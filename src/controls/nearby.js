@@ -18,8 +18,8 @@ var ControlNearby = L.Control.extend( {
 	},
 
 	onAdd: function ( map ) {
-		var container = L.DomUtil.create( 'div', 'leaflet-control-mapbox-share leaflet-bar' ),
-			link = L.DomUtil.create( 'a', 'mapbox-geocoder mapbox-icon mapbox-icon-kartographer-nearby', container ),
+		var container = L.DomUtil.create( 'div', 'leaflet-bar' ),
+			link = L.DomUtil.create( 'a', 'mw-kartographer-icon-nearby', container ),
 			pruneCluster = new PruneClusterForLeaflet( 70 ),
 			control = this;
 
