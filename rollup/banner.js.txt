@@ -8,8 +8,8 @@
  *
  * WHAT IS IT DOING ?
  *
- * In a few words, this code listens to a mediawiki hook, `wikivoyage.maps`
- * and adds a few features onto the basic Kartographer map:
+ * This code listens to a Kartographer extension hook `wikipage.maps`
+ * and adds a few features onto the map:
  *
  * - Adds a control (top right) to select a different tile layer and toggle
  *   overlays:
