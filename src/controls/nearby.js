@@ -24,7 +24,7 @@ var ControlNearby = L.Control.extend( {
 			control = this;
 
 		link.href = '#';
-		link.title = mw.msg( 'kartographer-fullscreen-text' );
+		link.title = mw.msg( 'kartographer-wv-nearby-articles-control' );
 		pruneCluster.options = {
 			wvIsOverlay: true,
 			wvIsExternal: true,
