@@ -1,6 +1,8 @@
 /* Wikivoyage Customization */
 .leaflet-control-layers-expanded {
+	max-height: calc(100% - 50px);
 	max-width: calc(100% - 10px);
+	text-align: left;
 	overflow: scroll;
 }
 
