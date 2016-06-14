@@ -1,4 +1,15 @@
-/* Wikivoyage Customization */
+/* = Wikivoyage Customization = */
+
+/* == Top Right controls == */
+
+/* Top Right controls won't overlap over left and bottom controls */
+.leaflet-right.leaflet-top {
+	left: 50px;
+	bottom: 20px;
+	overflow: hidden;
+}
+
+/* Expand the dropdown as wide as possible */
 .leaflet-control-layers-expanded {
 	max-height: calc(100% - 50px);
 	max-width: calc(100% - 10px);
@@ -6,74 +17,93 @@
 	overflow: scroll;
 }
 
+/* Add ellipsis to long layer labels */
 .leaflet-control-layers-expanded label {
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow-x: hidden;
 }
 
+/* Removes ellipsis on hover */
 .leaflet-control-layers-expanded .leaflet-control-layers-overlays:hover label,
 .leaflet-control-layers-expanded .leaflet-control-layers-base:hover label {
 	overflow-x: visible;
 }
 
-.leaflet-container .leaflet-control-container .leaflet-control-attribution {
+/* == Bottom Right controls == */
+
+/* Bottom right container style */
+.leaflet-right.leaflet-bottom {
+	background-color: rgba(255, 255, 255, 0.6);
+	left: auto;
+	cursor: default;
+	max-width: 100%;
+}
+
+/* Bottom right container style on hover */
+.leaflet-right.leaflet-bottom:hover {
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* === Scale control === */
+
+/** Override initial properties */
+.leaflet-right.leaflet-bottom .leaflet-control.leaflet-control-scale {
+	float: left;
+	clear: none;
+	margin: 1px 5px;
+	line-height: initial;
+}
+
+/* Scale Line style */
+.leaflet-control-scale.leaflet-control .leaflet-control-scale-line {
+	background-color: transparent;
+	padding: 0 5px;
+	font-size: 10px;
+	font-family: sans-serif;
+}
+
+/* Scale Line style on hover */
+.leaflet-right.leaflet-bottom .leaflet-control-scale .leaflet-control-scale-line:hover {
+	border-color: black;
+	cursor: pointer;
+}
+
+/** Override initial properties */
+.leaflet-right.leaflet-bottom .leaflet-control-scale .leaflet-control-scale-line:not(:first-child) {
+	border: 1px solid #999;
+	border-color: black;
+	border-top: none;
+	margin-top: 0;
+}
+
+/* === Attribution control === */
+
+/** Override initial properties */
+.leaflet-right.leaflet-bottom .leaflet-control.leaflet-control-attribution {
+	float: none;
+	clear: none;
 	font-size: 10px;
 	font-family: sans-serif;
 	line-height: 1.6;
 
-	background-color: rgba(255, 255, 255, 0.6);
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	width: 70%;
 }
 
-.leaflet-container .leaflet-control-container .leaflet-control-attribution:hover {
+/* Removes ellipsis on hover */
+.leaflet-right.leaflet-bottom .leaflet-control.leaflet-control-attribution:hover {
 	white-space: normal;
-	overflow: visible;
+	overflow: hidden;
 	text-overflow: clip;
-	background-color: rgba(255, 255, 255, 0.9);
 }
 
-.leaflet-control-scale-line:not(:first-child) {
-	margin-top: -1px;
-}
-
-.leaflet-control-scale.leaflet-control .leaflet-control-scale-line {
-	/*background-color: rgba(255,255,255,0.9);*/
-	background-color: transparent;
-	font-size: 10px;
-	padding: 0 5px;
-	font-family: sans-serif;
-}
-
-.leaflet-control-scale.leaflet-control:hover .leaflet-control-scale-line {
-	background-color: rgba(255, 255, 255, 0.6);
-	border-color: black;
-	border-bottom-width: none;
-}
-
-.leaflet-control-scale.leaflet-control:hover .leaflet-control-scale-line:not(:last-child) {
-	border-bottom-width: 1px;
-}
-
-.leaflet-control-scale-line:last-child {
-	border-top-width: 1px;
-}
-
+/* == New icons  == */
+/* New nearby POIs icon */
 .mapbox-icon-nearby-active, .mapbox-icon-nearby-active:hover {
 	background-color: #999999;
 	border-color: #999999;
-}
-
-.leaflet-right {
-	left: 50px;
-}
-
-.leaflet-right.leaflet-top {
-	bottom: 20px;
-	overflow: hidden;
 }
 
 .leaflet-control-container .leaflet-control .mw-kartographer-icon-nearby {
