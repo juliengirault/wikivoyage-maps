@@ -1,6 +1,7 @@
 import L from 'leaflet';
 import ControlLayers from './control-layers.js';
 import ControlNearby from '../controls/nearby';
+import ControlScale from '../controls/scale';
 import wikivoyage from '../mw.wikivoyage';
 import message from '../mw.message';
 
@@ -33,7 +34,8 @@ Map.prototype.controlLayers = function () {
 };
 
 Map.prototype.scale = function () {
-	return L.control.scale().addTo( this.map );
+	this._controlScale = this._controlScale || new ControlScale( { position: 'bottomright' } ).addTo( this.map );
+	return this._controlScale;
 };
 
 export default Map;
